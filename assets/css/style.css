@@ -23,7 +23,7 @@
   /* PARTE WHITE*/
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 49%);
-  --eerie-black: hsl(0, 0%, 13%);
+  --eerie-black: hsl(0, 0%, 0%);
   --salmon-pink: hsl(283, 100%, 50%);
   --sandy-brown: hsl(29, 90%, 65%);
   --bittersweet: hsl(283, 100%, 50%);
@@ -163,7 +163,19 @@
   
   .search-field::-webkit-search-cancel-button { display: none; }
   
+/*-----------------------------------*\
+  #ICONS DO MENU EMBAIXO 
+\*-----------------------------------*/
   /*-----------------*/
+  .bi-amazon {
+    font-size: 24px;
+    color: var(--eerie-black);
+  }
+
+  .bi-whatsapp {
+    font-size: 24 px;
+    color: var(--eerie-black);
+  }
 
 /*-----------------------------------*\
   #RESET
