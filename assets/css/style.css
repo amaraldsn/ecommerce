@@ -173,7 +173,12 @@
   }
 
   .bi-whatsapp {
-    font-size: 24 px;
+    font-size: 24px;
+    color: var(--eerie-black);
+  }
+
+  .bi-house-heart-fill {
+    font-size: 28px;
     color: var(--eerie-black);
   }
 
