@@ -116,6 +116,54 @@
 .custom-icon3 {
   color: #000;
 }
+/* Modo escuro */
+.dark-theme .custom-icon,
+.dark-theme .custom-icon2,
+.dark-theme .custom-icon3 {
+  color: #fff; 
+}
+
+/*-----------------------------------*\
+  #ICONES SUPERIORES REDES SOCIAIS DARK
+\*-----------------------------------*/
+
+/* Estilo para o ícone do Facebook no modo escuro */
+.dark-theme .header-social-container .social-link:hover {
+    background: var(--eerie-black);
+    color: var(--accent-color);
+  }
+
+  .dark-theme .header-social-container .social-link {
+    padding: 5px;
+    background: hsl(0, 100%, 2%);
+    border-radius: var(--border-radius-sm);
+    color: var(--sonic-silver);
+    transition: var(--transition-timing);
+  }
+
+/*-----------------------------------*\
+  #BARRA DE PESQUISA DARK
+\*-----------------------------------*/
+  .dark-theme .search-btn {
+    background: var(--white);
+    color: var(--accent-color);
+    border-radius: var(--border-radius-md);
+  }
+  
+  .dark-theme .search-btn:hover { color: var(--eerie-black); }
+
+  .dark-theme .header-search-container .search-field {
+    font-size: var(--fs-7);
+    color: var(--eerie-black);
+    padding: 10px 15px;
+    padding-right: 50px;
+    border: 1px solid var(--cultured);
+    border-radius: var(--border-radius-md);
+  }
+  
+  .search-field::-webkit-search-cancel-button { display: none; }
+  
+  /*-----------------*/
 
 /*-----------------------------------*\
   #RESET
@@ -512,6 +560,10 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .search-btn:hover { color: var(--salmon-pink); }
+/* MODO ESCURO */
+
+
+/*FECHAMENTO DE MODO ESCURO SEARCH*/
 
 .mobile-bottom-navigation {
   background: var(--white);
@@ -724,6 +776,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .banner-content {
+  display: none;
   background: hsla(0, 0%, 100%, 0.8);
   position: absolute;
   bottom: 25px;
@@ -743,6 +796,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .banner-title {
+  display: none;
   color: var(--eerie-black);
   font-size: var(--fs-1);
   text-transform: uppercase;
@@ -1837,7 +1891,9 @@ footer {
 
   }
 
-
+  .logodabixiga img {
+    margin: 0 auto 0 100px;
+  }
 
   /**
    * #HEADER
@@ -1861,6 +1917,7 @@ footer {
   .header-alert-news b { font-weight: var(--weight-500); }
 
   .header-main { padding: 25px 0; }
+  
 
   .mobile-bottom-navigation {
     border-top-left-radius: var(--border-radius-md);
@@ -1983,6 +2040,11 @@ footer {
     }
   
   }
+
+  .container .logodabixiga img {
+    margin: 0 auto 0 100px;
+  }
+
   /**
    * #HEADER
    */
@@ -1994,7 +2056,9 @@ footer {
     align-items: center;
   }
 
-  .header-logo { margin-bottom: 0; }
+  .header-logo { 
+    margin-bottom: 0;
+  }
 
   .header-top-actions {
     display: flex;
@@ -2015,7 +2079,7 @@ footer {
     transition: var(--transition-timing);
   }
 
-  .header-top-actions select:hover { color: var(--eerie-black); }
+  .header-top-actions select:hover { color: var(--ocean-green); }
 
   .header-search-container { min-width: 300px; }
 
@@ -2133,6 +2197,9 @@ footer {
   }
 
 
+  .container .logodabixiga img {
+    margin: 0 auto 0 100px;
+  }
 
   /**
    * #BASE 
@@ -2175,6 +2242,7 @@ footer {
    */
 
   .header-main .container { gap: 80px; }
+  
 
   .header-search-container { flex-grow: 1; }
 
@@ -2323,6 +2391,9 @@ footer {
 
   }
 
+  .container .logodabixiga img {
+    margin: 0 auto 0 100px;
+  }
 
 
   /**
@@ -2715,6 +2786,10 @@ footer {
   
   }
 
+  .container .logodabixiga img {
+    margin: 0 auto 0 100px;
+  }
+
   /**
    * #REUSED STYLE 
    */
@@ -2862,6 +2937,10 @@ footer {
   
   }
 
+  .container .logodabixiga img {
+    margin: 0 auto 0 100px;
+  }
+
   /**
    * #BASE 
    */
@@ -2889,4 +2968,5 @@ footer {
     max-width: 460px;
   }
 
+}
 }

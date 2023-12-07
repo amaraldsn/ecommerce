@@ -138,7 +138,7 @@
         <ul class="header-social-container">
 
           <li>
-            <a href="https://www.facebook.com/profile.php?id=100094559876343" class="social-link">
+            <a href="https://www.facebook.com/profile.php?id=100094559876343" class="social-link" id="facebookIcon">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
@@ -172,15 +172,7 @@
 
         <div class="header-top-actions">
           <img src="assets/images/moon.png" id="icon">
-
-          <select name="language">
-
-            <option value="pt-BR">Português</option>
-            <option value="en-US">Inglês</option>
-            <option value="es-ES">Espanhol</option>
-
-          </select>
-
+          
         </div>
 
       </div>
@@ -190,10 +182,9 @@
     <div class="header-main">
 
       <div class="container">
-
-        <a href="#" class="header-logo">
-          <img src="assets/images/logo/amaraldsnlogo.svg" alt="Anon's logo" width="120" height="120">
+        <img class="logodabixiga" src="assets/images/logo/amaraldsnlogo.png" id="logo" alt="Anon's logo" width="120" height="120" style="margin: 0 auto 0 120px;">
         </a>
+
 
         <div class="header-search-container">
 
@@ -840,61 +831,19 @@
 
           <div class="slider-item">
 
-            <img src="./assets/images/banner-1.jpg" alt="women's latest fashion sale" class="banner-img">
-
-            <div class="banner-content">
-
-              <p class="banner-subtitle">Trending item</p>
-
-              <h2 class="banner-title">Women's latest fashion sale</h2>
-
-              <p class="banner-text">
-                starting at &dollar; <b>20</b>.00
-              </p>
-
-              <a href="#" class="banner-btn">Shop now</a>
-
-            </div>
+            <img src="assets/images/promocao 1 banner.png" alt="women's latest fashion sale" class="banner-img">
 
           </div>
 
           <div class="slider-item">
 
-            <img src="./assets/images/banner-2.jpg" alt="modern sunglasses" class="banner-img">
-
-            <div class="banner-content">
-
-              <p class="banner-subtitle">Trending accessories</p>
-
-              <h2 class="banner-title">Modern sunglasses</h2>
-
-              <p class="banner-text">
-                starting at &dollar; <b>15</b>.00
-              </p>
-
-              <a href="#" class="banner-btn">Shop now</a>
-
-            </div>
+            <img src="assets/images/promocao 2 banner.png" alt="modern sunglasses" class="banner-img">
 
           </div>
 
           <div class="slider-item">
 
-            <img src="./assets/images/banner-3.jpg" alt="new fashion summer sale" class="banner-img">
-
-            <div class="banner-content">
-
-              <p class="banner-subtitle">Sale Offer</p>
-
-              <h2 class="banner-title">New fashion summer sale</h2>
-
-              <p class="banner-text">
-                starting at &dollar; <b>29</b>.99
-              </p>
-
-              <a href="#" class="banner-btn">Shop now</a>
-
-            </div>
+            <img src="assets/images/promocao 3 banner.png" alt="new fashion summer sale" class="banner-img">
 
           </div>
 
@@ -3639,40 +3588,138 @@
 
 
 
+  <!-- logo SUPERIOR MODO LIGHT/DARK -->
   <script>
-   //DESKTOP MODO LIGHT/DARK
-
-    var icon = document.getElementById("icon")
-
-    icon.onclick = function(){
+    // Função para verificar e ajustar o atributo src com base no modo claro/escuro
+    function adjustLogo() {
+      var logo = document.getElementById("logo");
+      if (document.body.classList.contains("dark-theme")) {
+        // Se o modo escuro estiver ativado, altera o src para a logo escura
+        logo.src = "assets/images/logo/amaraldsnlogopreto.png";
+      } else {
+        // Se o modo claro estiver ativado, altera o src para a logo clara
+        logo.src = "assets/images/logo/amaraldsnlogo.png";
+      }
+    }
+  
+    // Chamando a função ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      adjustLogo();
+    });
+  
+    // Lógica de troca ao clicar na logo
+    document.getElementById("logo").onclick = function(){
       document.body.classList.toggle("dark-theme");
-      if(document.body.classList.contains("dark-theme")) {
-        icon.src = "assets/images/sun.png";
-      }else {
-        icon.src = "assets/images/moon.png";
+      adjustLogo(); // Chama a função para ajustar o atributo src
+    }
+  </script>
+
+<!-- DESKTOP MODO LIGHT/DARK -->
+<script>
+    var iconDesktop = document.getElementById("icon");
+
+    iconDesktop.onclick = function(){
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+        iconDesktop.src = "assets/images/sun.png";
+      } else {
+        iconDesktop.src = "assets/images/moon.png";
+      }
+    }
+    
+  function adjustLogo() {
+    var logo = document.getElementById("logo");
+    if (document.body.classList.contains("dark-theme")) {
+      // Se o modo escuro estiver ativado, altera o src para a logo escura
+      logo.src = "assets/images/logo/amaraldsnlogopreto.png";
+    } else {
+      // Se o modo claro estiver ativado, altera o src para a logo clara
+      logo.src = "assets/images/logo/amaraldsnlogo.png";
+    }
+  }
+
+  // Função para alternar entre os modos light/dark e ajustar a logo
+  function toggleDarkMode(iconElement) {
+    document.body.classList.toggle("dark-theme");
+    adjustLogo();
+    // Atualizar o ícone conforme o modo
+    if (document.body.classList.contains("dark-theme")) {
+      iconElement.src = "assets/images/sun.png";
+    } else {
+      iconElement.src = "assets/images/moon.png";
+    }
+  }
+
+  // Adicionando eventos de clique para o botão desktop
+  var iconDesktop = document.getElementById("icon");
+  iconDesktop.onclick = function() {
+    toggleDarkMode(iconDesktop);
+    // Adicione aqui lógica adicional se necessário
+  }
+
+  // Adicionando eventos de clique para o botão mobile
+  var iconMobile = document.getElementById("iconmobile");
+  iconMobile.onclick = function() {
+    toggleDarkMode(iconMobile);
+    // Adicione aqui lógica adicional se necessário
+  }
+
+</script> //FECHAMENTO DE DESKTOP LIGHT DARK
+
+<script>
+    var iconMobile = document.getElementById("iconmobile");
+
+    iconMobile.onclick = function(){
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+        iconMobile.src = "assets/images/sunmobile.png";
+      } else {
+        iconMobile.src = "assets/images/moonmobile.png";
       }
     }
 
-  </script>
+    function adjustLogo() {
+      var logo = document.getElementById("logo");
+      if (document.body.classList.contains("dark-theme")) {
+        // Se o modo escuro estiver ativado, altera o src para a logo escura
+        logo.src = "assets/images/logo/amaraldsnlogopreto.png";
+      } else {
+        // Se o modo claro estiver ativado, altera o src para a logo clara
+        logo.src = "assets/images/logo/amaraldsnlogo.png";
+     }
+   }
 
-  <script>
-    //MOBILE MODO LIGHT/DARK
-    var icon = document.getElementById("iconmobile")
-
-    iconmobile.onclick = function(){
-      document.body.classList.toggle("dark-theme");
-      if(document.body.classList.contains("dark-theme")) {
-        icon.src = "assets/images/sunmobile.png";
-      }else {
-        icon.src = "assets/images/moonmobile.png";
-      }
+  // Função para alternar entre os modos light/dark e ajustar a logo
+  function toggleDarkMode(iconElement) {
+    document.body.classList.toggle("dark-theme");
+    adjustLogo();
+    // Atualizar o ícone conforme o modo
+    if (document.body.classList.contains("dark-theme")) {
+      iconElement.src = "assets/images/sun.png";
+    } else {
+      iconElement.src = "assets/images/moon.png";
     }
+  }
+  //Adicionando eventos de clique para o botão desktop
+  var iconDesktop = document.getElementById("icon");
+  iconDesktop.onclick = function() {
+    toggleDarkMode(iconDesktop);
+    // Adicione aqui lógica adicional se necessário
+  }
 
-  </script>
+  // Adicionando eventos de clique para o botão mobile
+  var iconMobile = document.getElementById("iconmobile");
+  iconMobile.onclick = function() {
+    toggleDarkMode(iconMobile);
+    // Adicione aqui lógica adicional se necessário
+  }
+
+</script>
 
   <!--
     - custom js link
   -->
+
   <script src="./assets/js/script.js"></script>
 
   <!--
