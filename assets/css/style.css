@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 @codewithsadee 
+ * Welcome
  */
 
 
@@ -36,34 +36,38 @@
 
   /* PARTE WHITE */
   --spanish-gray: hsl(0, 0%, 60%);
+  --white-silver: hsl(0, 0%, 0%);
   --sonic-silver: hsl(0, 0%, 47%);
-  --eerie-black: hsl(0, 0%, 0%);
+  --eerie-black: hsl(282, 100%, 50%);
   --salmon-pink: hsl(282, 96%, 42%);
   --sandy-brown: hsl(29, 90%, 65%);
   --bittersweet: hsl(303, 96%, 51%);
   --ocean-green: hsl(152, 51%, 52%);
-  --davys-gray: hsl(290, 21%, 11%);
-  --cultured: hsl(0, 0%, 93%);
+  --davys-gray: hsl(290, 100%, 50%);
+  --cultured: hsl(0, 0%, 0%);
   --white: hsl(0, 100%, 100%);
-  --onyx: hsl(0, 0%, 27%);
+  --onyx: hsl(0, 0%, 0%);
+  --footer: hsl(0, 0%, 0%);
 
 
   /*PARTE BLACK */
   
   .dark-theme {
-    --primary-color: hsl(0, 100%, 51%);
-    --accent-color: hsl(282, 96%, 42%);
+    --primary-color: hsl(261, 100%, 51%);
+    --accent-color: hsl(0, 0%, 100%);
+    --white-silver: hsl(0, 0%, 100%);
     --spanish-gray: hsl(0, 0%, 0%);
     --sonic-silver: hsl(0, 0%, 100%);
     --eerie-black: hsl(271, 100%, 50%);
-    --salmon-pink: hsl(320, 75%, 45%);
+    --salmon-pink: hsl(273, 100%, 50%);
     --sandy-brown: hsl(29, 90%, 65%);
     --bittersweet: hsl(283, 96%, 51%);
-    --ocean-green: hsl(152, 100%, 50%);
-    --davys-gray: hsl(0, 0%, 100%);
-    --cultured: hsl(0, 0%, 99%);
+    --ocean-green: hsl(276, 100%, 50%);
+    --davys-gray: hsl(0, 0%, 62%);
+    --cultured: hsl(0, 0%, 100%);
     --white: hsl(0, 0%, 0%);
-    --onyx: hsl(0, 0%, 85%);
+    --onyx: hsl(0, 0%, 100%);
+    --footer: hsl(273, 100%, 50%);
   
     
   
@@ -183,30 +187,27 @@
   #ICONS DO MENU EMBAIXO 
 \*-----------------------------------*/
   /*-----------------*/
-  .bi-amazon {
-    font-size: 24px;
-    color: var(--eerie-black);
-  }
 
-  .bi-whatsapp {
-    font-size: 24px;
-    color: var(--eerie-black);
-  }
 
   /*.bi-house-heart-fill {
     font-size: 28px;
     color: var(--eerie-black);
   }*/
-
   .bi-gift-fill {
-    font-size: 28px;
-    color: var(--eerie-black);
+    color: #000;
   }
 
   .bi-cart-fill {
-    font-size: 28px;
-    color: var(--eerie-black);
+    color: #000;
   }
+  .dark-theme .bi-gift-fill {
+    color: #ffffff;
+  }
+
+  .dark-theme .bi-cart-fill {
+    color: #ffffff;
+  }
+
 
 /*-----------------------------------*\
   #RESET
@@ -574,7 +575,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .header-logo { margin-bottom: 20px; }
 
-.header-logo img { margin: auto; }
+
+.header-logo img { margin: auto; } 
 
 .header-search-container { position: relative; }
 
@@ -628,7 +630,14 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .mobile-bottom-navigation .action-btn {
   position: relative;
   font-size: 26px;
-  color: var(--eerie-black);
+  color: #000;
+  padding: 10px;
+}
+
+.dark-theme .mobile-bottom-navigation .action-btn {
+  position: relative;
+  font-size: 26px;
+  color: #fff;
   padding: 10px;
 }
 
@@ -910,7 +919,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .category-item-title {
-  color: var(--eerie-black);
+  color: var(--white-silver);
   font-size: var(--fs-9);
   font-weight: var(--weight-600);
   text-transform: uppercase;
@@ -1143,7 +1152,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .product-minimal .showcase-content { width: calc(100% - 85px); }
 
 .product-minimal .showcase-title {
-  color: var(--eerie-black);
+  color: var(--white-silver);
   font-size: var(--fs-7);
   font-weight: var(--weight-600);
   text-transform: capitalize;
@@ -1716,7 +1725,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 \*-----------------------------------*/
 
 footer {
-  background: var(--eerie-black);
+  background: var(--footer);
   padding: 30px 0;
 }
 
@@ -1877,6 +1886,167 @@ footer {
 \*-----------------------------------*/
 
 
+@media (min-width: 360px) {
+  /**
+  * colors
+  */
+
+ /**
+  * #CUSTOM PROPERTY
+  */
+
+ :root {
+    /**
+  * colors
+  */
+
+ /* PARTE WHITE*/
+ --spanish-gray: hsl(0, 0%, 60%);
+ --sonic-silver: hsl(0, 0%, 49%);
+ --white-silver: hsl(0, 0%, 100%);
+ --eerie-black: hsl(0, 0%, 13%);
+ --salmon-pink: hsl(283, 100%, 50%);
+ --sandy-brown: hsl(29, 90%, 65%);
+ --bittersweet: hsl(283, 100%, 50%);
+ --ocean-green: hsl(0, 100%, 50%);
+ --davys-gray: hsl(0, 0%, 33%);
+ --cultured: hsl(0, 0%, 93%);
+ --white: hsl(0, 0%, 100%);
+ --onyx: hsl(0, 0%, 27%);
+
+ /* PARTE BLACK*/
+  
+ .dark-theme {
+   --primary-color: hsl(0, 0%, 0%);
+   --accent-color: hsl(0, 0%, 100%);
+   --white-silver: hsl(0, 0%, 100%);
+   --spanish-gray: hsl(0, 0%, 0%);
+   --sonic-silver: hsl(0, 0%, 100%);
+   --eerie-black: hsl(283, 100%, 50%);
+   --salmon-pink: hsl(0, 0%, 100%);
+   --sandy-brown: hsl(29, 90%, 65%);
+   --bittersweet: hsl(283, 100%, 50%);
+   --ocean-green: hsl(0, 100%, 50%);
+   --davys-gray: hsl(0, 0%, 49%);
+   --cultured: hsl(0, 0%, 93%);
+   --white: hsl(0, 0%, 0%);
+   --onyx: hsl(0, 0%, 66%);
+   }
+ 
+   /**
+    * typography 
+    */
+
+   --fs-1: 1.875rem;
+
+ }
+
+ .logodabixiga  img{
+   margin-left: 400px;
+ }
+
+ /**
+  * #HEADER
+  */
+
+ .header-top {
+   display: block;
+   padding: 10px 0;
+   border-bottom: 1px solid var(--cultured);
+ }
+
+ .header-social-container,
+ .header-top-actions { display: none; }
+
+ .header-alert-news {
+   color: var(--sonic-silver);
+   font-size: var(--fs-9);
+   text-transform: uppercase;
+ }
+
+ .header-alert-news b { font-weight: var(--weight-500); }
+
+ .header-main { padding: 25px 0; }
+ 
+
+ .mobile-bottom-navigation {
+   border-top-left-radius: var(--border-radius-md);
+   border-top-right-radius: var(--border-radius-md);
+ }
+
+
+
+ /**
+  * #BANNER
+  */
+
+ .slider-item { aspect-ratio: 5 / 3; }
+
+ .banner-content {
+   top: 50%;
+   right: auto;
+   bottom: auto;
+   transform: translateY(-50%);
+   max-width: 320px;
+ }
+
+ .banner-subtitle { --fs-7: 1rem; }
+
+ .banner-text {
+   display: block;
+   color: var(--sonic-silver);
+   font-size: var(--fs-7);
+   font-weight: var(--weight-500);
+   margin-bottom: 10px;
+ }
+
+ .banner-text b { font-size: var(--fs-2); }
+
+ .banner-btn { padding: 7px 20px; }
+
+
+
+ /**
+  * #PRODUCT 
+  */
+
+ .product-grid {
+   grid-template-columns: 1fr 1fr;
+   gap: 30px;
+ }
+
+
+
+ /**
+  * #CTA
+  */
+
+ .cta-content { padding: 40px; }
+
+ .cta-content .discount {
+   --fs-11: 0.875rem;
+   padding: 5px 10px;
+ }
+
+ .cta-title { --fs-5: 1.5rem; }
+
+ .cta-text { --fs-7: 1rem; }
+
+ .cta-btn { --fs-9: 1rem; }
+
+
+
+ /**
+  * #FOOTER
+  */
+
+ .copyright { --fs-8: 0.875rem; }
+
+}
+
+
+
+
 /**
  * responsive larger than 480px screen
  */
@@ -1898,6 +2068,7 @@ footer {
   /* PARTE WHITE*/
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 49%);
+  --white-silver: hsl(0, 0%, 100%);
   --eerie-black: hsl(0, 0%, 13%);
   --salmon-pink: hsl(283, 100%, 50%);
   --sandy-brown: hsl(29, 90%, 65%);
@@ -1913,6 +2084,7 @@ footer {
   .dark-theme {
     --primary-color: hsl(0, 0%, 0%);
     --accent-color: hsl(0, 0%, 100%);
+    --white-silver: hsl(0, 0%, 100%);
     --spanish-gray: hsl(0, 0%, 0%);
     --sonic-silver: hsl(0, 0%, 100%);
     --eerie-black: hsl(283, 100%, 50%);
@@ -1934,8 +2106,8 @@ footer {
 
   }
 
-  .logodabixiga img {
-    margin: 0 auto 0 100px;
+  .header-main .container .logodabixiga  img{
+    margin-left: 100px;
   }
 
   /**
@@ -2054,6 +2226,7 @@ footer {
   /* PARTE WHITE*/
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 49%);
+  --white-silver: hsl(0, 0%, 100%);
   --eerie-black: hsl(0, 0%, 13%);
   --salmon-pink: hsl(283, 100%, 50%);
   --sandy-brown: hsl(29, 90%, 65%);
@@ -2069,6 +2242,7 @@ footer {
   .dark-theme {
     --primary-color: hsl(0, 0%, 0%);
     --accent-color: hsl(0, 0%, 100%);
+    --white-silver: hsl(0, 0%, 100%);
     --spanish-gray: hsl(0, 0%, 0%);
     --sonic-silver: hsl(0, 0%, 100%);
     --eerie-black: hsl(283, 100%, 50%);
@@ -2203,6 +2377,7 @@ footer {
   /* PARTE WHITE*/
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 49%);
+  --white-silver: hsl(0, 0%, 100%);
   --eerie-black: hsl(0, 0%, 13%);
   --salmon-pink: hsl(283, 100%, 50%);
   --sandy-brown: hsl(29, 90%, 65%);
@@ -2218,6 +2393,7 @@ footer {
   .dark-theme {
     --primary-color: hsl(0, 0%, 0%);
     --accent-color: hsl(0, 0%, 100%);
+    --white-silver: hsl(0, 0%, 100%);
     --spanish-gray: hsl(0, 0%, 0%);
     --sonic-silver: hsl(0, 0%, 100%);
     --eerie-black: hsl(283, 100%, 50%);
@@ -2397,6 +2573,7 @@ footer {
   /* PARTE WHITE*/
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 49%);
+  --white-silver: hsl(0, 0%, 100%);
   --eerie-black: hsl(0, 0%, 13%);
   --salmon-pink: hsl(283, 100%, 50%);
   --sandy-brown: hsl(29, 90%, 65%);
@@ -2412,6 +2589,7 @@ footer {
   .dark-theme {
     --primary-color: hsl(0, 0%, 0%);
     --accent-color: hsl(0, 0%, 100%);
+    --white-silver: hsl(0, 0%, 100%);
     --spanish-gray: hsl(0, 0%, 0%);
     --sonic-silver: hsl(0, 0%, 100%);
     --eerie-black: hsl(283, 100%, 50%);
@@ -2799,6 +2977,7 @@ footer {
   /* PARTE WHITE*/
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 49%);
+  --white-silver: hsl(0, 0%, 100%);
   --eerie-black: hsl(0, 0%, 13%);
   --salmon-pink: hsl(283, 100%, 50%);
   --sandy-brown: hsl(29, 90%, 65%);
@@ -2814,6 +2993,7 @@ footer {
   .dark-theme {
     --primary-color: hsl(0, 0%, 0%);
     --accent-color: hsl(0, 0%, 100%);
+    --white-silver: hsl(0, 0%, 100%);
     --spanish-gray: hsl(0, 0%, 0%);
     --sonic-silver: hsl(0, 0%, 100%);
     --eerie-black: hsl(283, 100%, 50%);
@@ -2950,6 +3130,7 @@ footer {
   /* PARTE WHITE*/
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 49%);
+  --white-silver: hsl(0, 0%, 100%);
   --eerie-black: hsl(0, 0%, 13%);
   --salmon-pink: hsl(283, 100%, 50%);
   --sandy-brown: hsl(29, 90%, 65%);
@@ -2965,6 +3146,7 @@ footer {
   .dark-theme {
     --primary-color: hsl(0, 0%, 0%);
     --accent-color: hsl(0, 0%, 100%);
+    --white-silver: hsl(0, 0%, 100%);
     --spanish-gray: hsl(0, 0%, 0%);
     --sonic-silver: hsl(0, 0%, 100%);
     --eerie-black: hsl(283, 100%, 50%);
