@@ -20,35 +20,51 @@
    * colors
    */
 
-  /* PARTE WHITE*/
+  /*
   --spanish-gray: hsl(0, 0%, 60%);
-  --sonic-silver: hsl(0, 0%, 49%);
-  --eerie-black: hsl(0, 0%, 0%);
-  --salmon-pink: hsl(283, 100%, 50%);
+  --sonic-silver: hsl(0, 0%, 47%);
+  --eerie-black: hsl(0, 0%, 13%);
+  --salmon-pink: hsl(353, 100%, 78%);
   --sandy-brown: hsl(29, 90%, 65%);
-  --bittersweet: hsl(283, 100%, 50%);
-  --ocean-green: hsl(0, 100%, 50%);
+  --bittersweet: hsl(0, 100%, 70%);
+  --ocean-green: hsl(152, 51%, 52%);
   --davys-gray: hsl(0, 0%, 33%);
   --cultured: hsl(0, 0%, 93%);
-  --white: hsl(0, 0%, 100%);
+  --white: hsl(0, 100%, 100%);
+  --onyx: hsl(0, 0%, 27%);
+  */
+
+  /* PARTE WHITE */
+  --spanish-gray: hsl(0, 0%, 60%);
+  --sonic-silver: hsl(0, 0%, 47%);
+  --eerie-black: hsl(0, 0%, 0%);
+  --salmon-pink: hsl(282, 96%, 42%);
+  --sandy-brown: hsl(29, 90%, 65%);
+  --bittersweet: hsl(303, 96%, 51%);
+  --ocean-green: hsl(152, 51%, 52%);
+  --davys-gray: hsl(290, 21%, 11%);
+  --cultured: hsl(0, 0%, 93%);
+  --white: hsl(0, 100%, 100%);
   --onyx: hsl(0, 0%, 27%);
 
-  /* PARTE BLACK*/
-   
+
+  /*PARTE BLACK */
+  
   .dark-theme {
-    --primary-color: hsl(0, 0%, 0%);
-    --accent-color: hsl(0, 0%, 100%);
+    --primary-color: hsl(0, 100%, 51%);
+    --accent-color: hsl(282, 96%, 42%);
     --spanish-gray: hsl(0, 0%, 0%);
     --sonic-silver: hsl(0, 0%, 100%);
-    --eerie-black: hsl(283, 100%, 50%);
-    --salmon-pink: hsl(0, 0%, 100%);
+    --eerie-black: hsl(271, 100%, 50%);
+    --salmon-pink: hsl(320, 75%, 45%);
     --sandy-brown: hsl(29, 90%, 65%);
-    --bittersweet: hsl(283, 100%, 50%);
-    --ocean-green: hsl(0, 100%, 50%);
-    --davys-gray: hsl(0, 0%, 49%);
-    --cultured: hsl(0, 0%, 93%);
+    --bittersweet: hsl(283, 96%, 51%);
+    --ocean-green: hsl(152, 100%, 50%);
+    --davys-gray: hsl(0, 0%, 100%);
+    --cultured: hsl(0, 0%, 99%);
     --white: hsl(0, 0%, 0%);
-    --onyx: hsl(0, 0%, 66%);
+    --onyx: hsl(0, 0%, 85%);
+  
     
   
   /**
