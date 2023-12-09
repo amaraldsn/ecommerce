@@ -177,7 +177,17 @@
     color: var(--eerie-black);
   }
 
-  .bi-house-heart-fill {
+  /*.bi-house-heart-fill {
+    font-size: 28px;
+    color: var(--eerie-black);
+  }*/
+
+  .bi-gift-fill {
+    font-size: 28px;
+    color: var(--eerie-black);
+  }
+
+  .bi-cart-fill {
     font-size: 28px;
     color: var(--eerie-black);
   }
